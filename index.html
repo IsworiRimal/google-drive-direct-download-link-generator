@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Google Drive Direct Link Generator - Generate direct download links for files stored in Google Drive. Bypass Google Drive preview and initiate immediate file downloads.">
+    <meta name="keywords" content="Google Drive, Direct Link Generator, Download Links">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <title>Google Drive Direct Link Generator</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785579957472616"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785579957472616"
+     crossorigin="anonymous"></script>
+<!-- auto ads -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3785579957472616"
+     data-ad-slot="8894552625"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <div class="logo">
+            <img src="/images/logo.svg" alt="Google Drive Direct Link Generator Logo">
+            <h1>Google Drive Direct Link Generator</h1>
+            <p class="styled-paragraph">This tool allows you to generate a direct download link to files stored in Google Drive. A direct link will immediately start downloading the file, bypassing the preview in Google Drive.</p>
+        </div>
+    </header>
+
+    <main><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785579957472616"
+        crossorigin="anonymous"></script>
+   <!-- auto ads -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3785579957472616"
+        data-ad-slot="8894552625"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+        <section class="notes">
+            <h2>Notes</h2>
+            <ul>
+                <li>Make sure your file's visibility in Google Drive is set to "Anyone with the link." If it's set to "Restricted," only people logged in to Google and granted access will be able to open the direct link.</li>
+                <li>This only works for uploaded files, not documents created in Google Docs/Sheets/Slides.</li>
+                <li>If your file is very large, the direct link may first open a page saying that the file is too large for Google to scan for viruses. That page will have a button to download the file.</li>
+            </ul><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785579957472616"
+            crossorigin="anonymous"></script>
+       <!-- auto ads -->
+       <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3785579957472616"
+            data-ad-slot="8894552625"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+       <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+       </script>
+        </section>
+
+        <section class="generator">
+            <label for="driveLink">Enter Google Drive Shareable Link:</label>
+            <input type="text" id="driveLink" placeholder="Paste your Google Drive link here">
+            <button onclick="generateDirectLink()">Create Direct Link</button>
+            <div id="directLink"></div>
+            <button onclick="copyDirectLink()" id="copyButton">Copy Link</button>
+            <p id="copyStatus"></p>
+        </section><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785579957472616"
+        crossorigin="anonymous"></script>
+   <!-- auto ads -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3785579957472616"
+        data-ad-slot="8894552625"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+        <section class="how-to">
+            <h2>How to Get Your Sharing URL</h2>
+            <p>Follow these steps to obtain your Google Drive sharing URL:</p>
+            <p>Step 1: Go to Google Drive and right click the file that you want to share, then click on "Share"</p>
+            <img src="/images/images1.png" alt="Step 1: Go to Google Drive and right click the file">
+            <p>Step 2: In the window that comes up, change the access to "Anyone with the link"</p>
+            <img src="/images/images2.png" alt="Step 2: Change the access to 'Anyone with the link'">
+            <p>Step 3: Click "Copy link"</p>
+            <img src="/images/images3.png" alt="Step 3: Click 'Copy link'">
+            <p>Step 4: Paste that link into the text box above and click "Create Direct Link" to create your link. Enjoy!</p>
+        </section><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785579957472616"
+        crossorigin="anonymous"></script>
+   <!-- auto ads -->
+   <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3785579957472616"
+        data-ad-slot="8894552625"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+        <section class="how-it-works">
+            <h2>How Does it Work?</h2>
+            <p>This site takes your sharing URL, which looks like this:</p>
+            <pre>https://drive.google.com/file/d/1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT/view?usp=sharing</pre>
+            <p>It extracts the file ID, the part between <code>/d/</code> and <code>/view</code>, and puts it into a new URL like this:</p>
+            <pre>https://drive.google.com/uc?export=download&id=1LDRlyZaZTF-bxHjBDEiL2obMxYHtf3YT</pre>
+            <p>This new URL format causes Google Drive to serve the file directly as a download, avoiding the preview. You can manually do this conversion, but this site simplifies the process. The conversion happens entirely in your browser, and your sharing URL is never sent or stored anywhere.</p>
+        </section>
+    </main>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785579957472616"
+    crossorigin="anonymous"></script>
+<!-- auto ads -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-3785579957472616"
+    data-ad-slot="8894552625"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <footer>
+        <p>Site by <a target="_blank" href="https://www.iswori.com.np/">Iswori Education</a> : Google Drive Direct Download Link Generator</p>
+    </footer>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3785579957472616"
+    crossorigin="anonymous"></script>
+<!-- auto ads -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-3785579957472616"
+    data-ad-slot="8894552625"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
